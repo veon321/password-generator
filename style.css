@@ -1,0 +1,79 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.boxcheck p {
+  margin: 0;
+}
+
+.boxcheck {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.boxcheck-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 15px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(80, 59, 173);
+  border-radius: 15px;
+  width: 470px;
+  padding: 5px;
+  gap: 20px;
+  padding: 20px;
+  border: 1px black solid;
+}
+
+.generator {
+  color: aliceblue;
+}
+
+.generated-password {
+  width: 100%;
+  height: 50px;
+}
+
+.password-length {
+  height: 25px;
+  width: 40px;
+}
+
+.generate-password {
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 100%;
+  cursor: pointer;
+  background-color: rgb(106, 82, 192);
+  font-size: 16px;
+}
+
+input[type="checkbox"] {
+  cursor: pointer;
+}

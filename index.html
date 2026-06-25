@@ -3,7 +3,53 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body></body>
+  <body>
+    <main>
+      <h1 class="generator">Password generator</h1>
+
+      <input
+        type="text"
+        id="generated-password"
+        name="generated-password"
+        class="generated-password"
+      />
+
+      <div class="boxcheck-container">
+        <div class="boxcheck">
+          <p class="length">Password length:</p>
+          <input
+            type="number"
+            id="password-length"
+            name="password-length"
+            class="password-length"
+          />
+        </div>
+        <div class="boxcheck">
+          <p>Contain Lowercase Letters:</p>
+          <input type="checkbox" name="contain-lowercase" />
+        </div>
+        <div class="boxcheck">
+          <p>Contain Uppercase Letters:</p>
+          <input type="checkbox" name="contain-uppercase" />
+        </div>
+
+        <div class="boxcheck">
+          <p>Contain Numbers:</p>
+          <input type="checkbox" name="contain-number" />
+        </div>
+
+        <div class="boxcheck">
+          <p>Contain Symbols:</p>
+          <input type="checkbox" name="contain-symbols" />
+        </div>
+      </div>
+      <button type="button" id="generate-password" class="generate-password">
+        Generate Password
+      </button>
+    </main>
+    <script src="script.js"></script>
+  </body>
 </html>
