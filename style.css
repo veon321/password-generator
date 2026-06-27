@@ -19,6 +19,7 @@ body {
   justify-content: center;
   align-items: center;
   color: #f3f4f6;
+  padding: 16px;
 }
 
 main {
@@ -28,14 +29,14 @@ main {
   border-radius: 16px;
   width: 100%;
   max-width: 480px;
-  padding: 30px;
+  padding: clamp(16px, 5vw, 30px);
   gap: 24px;
   border: 1px solid #455d7e;
 }
 
 .generator {
   margin: 0;
-  font-size: 24px;
+  font-size: clamp(20px, 5vw, 24px);
   font-weight: 600;
   color: #ffffff;
   text-align: center;
@@ -50,7 +51,7 @@ main {
   border-radius: 8px;
   color: #10b981;
   font-family: "Courier New", Courier, monospace;
-  font-size: 18px;
+  font-size: clamp(14px, 4vw, 18px);
   font-weight: bold;
   padding: 0 16px;
   outline: none;
@@ -71,7 +72,7 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 15px;
+  font-size: clamp(13px, 3.5vw, 15px);
   color: #9ca3af;
 }
 
@@ -110,7 +111,7 @@ input[type="checkbox"] {
   cursor: pointer;
   background-color: #6366f1;
   color: #ffffff;
-  font-size: 16px;
+  font-size: clamp(14px, 4vw, 16px);
   font-weight: 600;
 }
 
