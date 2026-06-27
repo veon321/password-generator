@@ -1,6 +1,13 @@
-const button = document.getElementById9("generate-password");
+const button = document.getElementById("generate-password");
+const contain = document.querySelectorAll(".contain");
 
 function check() {
-    console.log("test");
+  contain.forEach((checkbox) => {
+    const checked = [];
+    if (checkbox.checked) {
+      checked.push(checkbox.name);
+    }
+    console.log(checked);
+  });
 }
-check.addEventListener("click", check)
+button.addEventListener("click", check);
