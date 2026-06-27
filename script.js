@@ -8,6 +8,8 @@ const passwordOptions = [
 const button = document.getElementById("generate-password");
 const output = document.getElementById("generated-password");
 const lengthInput = document.getElementById("password-length");
+const copy = document.getElementById("copy");
+const passwordInput = document.getElementById("generated-password");
 
 function generatePassword() {
   let availableChars = "";
@@ -33,3 +35,20 @@ function generatePassword() {
   output.value = password;
 }
 button.addEventListener("click", generatePassword);
+
+copy.addEventListener("click", () => {
+  if (passwordInput.value === "") return;
+  navigator.clipboard
+    .writeText(passwordInput.value)
+    .then(() => {
+      copy.innerHTML = "coppied!";
+      copy.style.color = "green";
+      setTimeout(() => {
+        copy.innerHTML = "copy";
+        copy.style.color = "white";
+      }, 1100);
+    })
+    .catch((err) => {
+      console.error("Błąd podczas kopiowania: ", err);
+    });
+});

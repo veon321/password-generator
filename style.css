@@ -27,7 +27,7 @@ main {
   background-color: #111827;
   border-radius: 16px;
   width: 100%;
-  max-width: 420px;
+  max-width: 480px;
   padding: 30px;
   gap: 24px;
   border: 1px solid #455d7e;
@@ -120,4 +120,13 @@ input[type="checkbox"] {
 
 .generate-password:active {
   transform: scale(0.98);
+}
+
+.generated {
+  display: flex;
+}
+
+.copy {
+  margin-left: 5px;
+  cursor: pointer;
 }
